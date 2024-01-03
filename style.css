@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 100;
+}
+
+body, html{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    padding: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button{
+    font-family: "gilroy";
+    padding: 2vh 4vh;
+    background-color: white;
+    border: 1px solid #0000003b;
+    border-radius: 100px;
+    font-weight: 900;
+    font-size: 1.7vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.logo{
+    font-weight: 900;
+    font-size: 3vh;
+    display: flex;
+    align-items: center;
+}
+.logo h3{margin-left: 1vh;}
+
+.logo-asset{
+    width: 2vh;
+    height: 2vh;
+    background-color: transparent;
+    display: block;
+    border-radius: 100%;
+    animation: logo 2s infinite linear;
+    
+}
+.logo-asset:nth-child(1){
+    border-left: 0.5vh solid #00000034;
+    border-top: 0.5vh solid #00000034;
+    border-bottom: 0.5vh solid #00000034;
+}
+.logo-asset:nth-child(2){
+    border-right: 0.5vh solid #00000034;
+    border-top: 0.5vh solid #00000034;
+    border-bottom: 0.5vh solid #00000034;
+}
+
+@keyframes logo {
+    from{
+        transform: none;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.btns{
+    display: flex;
+    align-items: center;
+    gap: 0.5vh;
+}
+.menu{
+    position: relative;
+}
+.menu-content{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 1px solid #0000003b;
+    border-radius: 20px;
+    position: absolute;
+    background-color: white;
+    right: 0;
+    z-index: 9;
+    margin-top: 1vh;
+    width: 27vh;
+    padding: 1vh;
+    opacity: 0;
+    transition: 0.3s;
+    height: 0vh;
+    overflow: hidden;
+}
+.menu-content a{
+    font-family: "gilroy";
+    padding: 2vh 4vh;
+    font-weight: 900;
+    font-size: 1.7vh;
+    border-radius: 100px;
+    background-color: rgba(0, 0, 0, 0.055);
+    width: 100%;
+    transition: 0.3s;
+    transform: none;
+    cursor: pointer;
+}
+
+
+.menu-content a:hover{
+    background-color: black;
+    color: white;
+}
+
+.menu-content a:active{
+    transform: scale(0.9);
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+
+.main-content{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vh;
+    color: white;
+    border-radius: 5vh;
+}
+
+.card{
+    border-radius: 5vh;
+    padding: 4vh;
+    transition: 0.5s;
+    box-shadow: 2px 2px 10px #00000033;
+    cursor: pointer;
+}
+
+.card:hover{
+    background-size: 70%;
+}
+
+.card1{
+    background-image: url("https://images.unsplash.com/photo-1617791160505-6f00504e3519?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: 60%;
+    background-position: left;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.card2{
+    background-image: url("https://images.unsplash.com/photo-1534670007418-fbb7f6cf32c3?q=80&w=1588&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: 60%;
+    background-position: left;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.card3{
+    background-image: url("https://images.unsplash.com/photo-1579781403313-56447cb42199?q=80&w=1498&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: 60%;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.card4{
+    background-image: url("https://images.unsplash.com/photo-1621111848501-8d3634f82336?q=80&w=1565&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: 60%;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.card5{
+    background-image: url("https://images.unsplash.com/photo-1696258686454-60082b2c33e2?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: 60%;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.card6{
+    background-image: url("https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: 60%;
+    background-position: right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.card7{
+    background-image: url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: 60%;
+    background-position: right bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.col-left{align-items: start;}
+.col-right{align-items: end;}
+
+.card-sm{
+    width: 120%;
+    height: 20%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-main{
+    width: 120%;
+    height: 60%;
+    background-color: black;
+}
+
+.card-left, .card-right{
+    width: 90%;
+    height: 100%;
+    background-color: black;
+}
+
+.card-up{height: 100%;}
+.card-down{
+    animation: card 2s infinite alternate cubic-bezier(0.55, 0.09, 0.68, 0.53);
+}
+
+@keyframes card {
+    from{
+        height: 35%;
+    }
+    to{
+        height: 350%;
+    }
+}
+
+.card-left:nth-child(1), .card-right:nth-child(1){
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.num{
+    font-size: 7vh;
+    letter-spacing: -5px;
+    font-weight: 900;
+}
+
+span{
+    font-weight: 900;
+}
+
+.main h1,h2{
+    mix-blend-mode: difference;
+    pointer-events: none;
+}
+h2{
+    font-size: 4vh;
+}
